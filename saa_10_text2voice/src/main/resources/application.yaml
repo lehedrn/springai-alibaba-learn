@@ -1,0 +1,15 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_10_text2voice
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+  

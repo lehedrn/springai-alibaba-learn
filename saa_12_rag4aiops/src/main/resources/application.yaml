@@ -1,0 +1,30 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_12_rag4aiops
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+      chat:
+        options:
+          model: deepseek-r1
+      embedding:
+        options:
+          model: text-embedding-v4
+    vectorstore:
+      redis:
+        initialize-schema: true
+        index-name: rag01-index
+        prefix: rag01-prefix
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: xxxx

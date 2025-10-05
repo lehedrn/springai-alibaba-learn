@@ -1,0 +1,22 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_08_persistent
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+  
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: xxxx
+      database: 0
+      connect-timeout: 3000ms

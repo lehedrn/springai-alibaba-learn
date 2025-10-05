@@ -1,0 +1,18 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_01_helloworld
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG

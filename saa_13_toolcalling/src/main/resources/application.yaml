@@ -1,0 +1,14 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_13_toolcalling
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}

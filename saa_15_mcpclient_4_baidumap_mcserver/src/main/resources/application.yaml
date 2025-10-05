@@ -1,0 +1,21 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_15_mcpclient_4_baidumap_mcserver
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+    mcp:
+      client:
+        request-timeout: 20s
+        toolcallback:
+          enabled: true
+        stdio:
+          servers-configuration: classpath:/mcp-server.json

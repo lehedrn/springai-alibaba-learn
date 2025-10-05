@@ -1,0 +1,24 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_11_embed2vector
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
+    vectorstore:
+      redis:
+        initialize-schema: true
+        index-name: custom-index
+        prefix: custom-prefix
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: xxxx

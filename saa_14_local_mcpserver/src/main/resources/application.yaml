@@ -1,0 +1,17 @@
+server:
+  port: 18081
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_14_local_mcpserver
+  ai:
+    mcp:
+      server:
+        type: async
+        name: my-mcp-server-01
+        version: 1.0.0

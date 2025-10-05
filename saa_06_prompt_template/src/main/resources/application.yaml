@@ -1,0 +1,14 @@
+server:
+  port: 18080
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+
+spring:
+  application:
+    name: saa_06_prompt_template
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API}
